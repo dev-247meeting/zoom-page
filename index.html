@@ -29,7 +29,7 @@
                     <img class="logo2" src="https://247meeting.zoom.us/account/branding/p/deebe673-ac66-4ca2-81ec-b8d507c25cc0.png" alt="Zoom Logo" />
                 </div>
 
-    <div class="action-btns">
+                <!-- <div class="action-btns">
                     <ul>
                         <li><a id="btnJoinMeeting" href="/join" class="btn  btn-large">Join a Meeting</a>
                         </li>
@@ -45,7 +45,8 @@
                             </div>
                         </li>
                     </ul>
-                </div>
+                </div>-->
+
             </div>
 
             <div id="header_login">
@@ -73,6 +74,23 @@
         </div>
             <div class="ptext">
               247meeting are delighted to now offer the Zoom Video and Web Conferencing services, </br>integrated with the  247meeting Voice Conferencing service
+            </div>
+            <div class="action-btns">
+                <ul>
+                    <li><a id="btnJoinMeeting" href="/join" class="btn  btn-large">Join a Meeting</a>
+                    </li>
+                    <li>
+                        <div class="btn-group">
+                            <a id="btnHostMeeting" data-toggle="dropdown" href="javascript:;" class="btn dropdown-toggle  btn-large">Host a Meeting <span class="caret"></span></a>
+                            <ul id="hostMeetingDropdown" class="dropdown-menu pull-right">
+                                <li><a href="/start/webmeeting">Host a Screen Share Meeting</a>
+                                </li>
+                                <li><a href="/start/videomeeting">Host a Video Meeting</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
             </div>
     </div>
   </div>
@@ -205,7 +223,6 @@ width: auto;
 margin: 0px 0px 0px 220px
 }
 
-
 #header_container {
 /*background: url("https://247meeting.zoom.us/account/branding/p/72b5307f-8c76-4f22-b763-e3b6e679b661.png") 0 0 repeat-x;*/
 background-color: #3F4659;
@@ -304,6 +321,24 @@ font-size: 18px;
 line-height: 20px;
 font-family: Tahoma;
 font-weight: normal;
+}
+
+.action-btns ul
+{
+    margin:15px 0 0 0px;
+}
+.action-btns li
+{
+  display:inline;
+  margin:5px;
+}
+.btn-group>.btn
+{
+  border-radius: 6px!important;
+}
+.btn-large .caret
+{
+  margin-top:8px;
 }
 </style>
 
